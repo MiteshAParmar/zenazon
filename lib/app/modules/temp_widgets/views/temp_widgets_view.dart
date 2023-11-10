@@ -1,17 +1,27 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, unnecessary_import
-
-import 'package:flutter/material.dart';
-
 import 'package:get/get.dart';
-import 'package:zenazon/app/utility/consts.dart';
 
-import '../../../../widgets/11-catagories/customTabBar.dart';
+import 'package:zenazon/app/utility/consts.dart';
+import 'package:zenazon/widgets/16-Filters/filters_sizes_strip.dart';
+// ignore: unnecessary_import
 import '../controllers/temp_widgets_controller.dart';
 
 class TempWidgetsView extends GetView<TempWidgetsController> {
   const TempWidgetsView({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
-    return Placeholder();
+    return Scaffold(
+        backgroundColor: Colors.white,
+        appBar: AppBar(
+          title: Text(
+            "Temp View",
+            style: GoogleFonts.montserrat(
+              fontSize: 20.dp,
+              fontWeight: FontWeight.w500,
+              color: Colors.black,
+            ),
+          ),
+        ),
+        body: FilterSizeStrip());
   }
 }

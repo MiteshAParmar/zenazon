@@ -19,6 +19,15 @@ abstract class Routes {
   static const MAIN2 = _Paths.MAIN2;
   static const MAIN3 = _Paths.MAIN3;
   static const CATATORIES = _Paths.CATATORIES;
+  static const CATAGORIES2 = _Paths.CATAGORIES2;
+  static const CATALOG1 = _Paths.CATALOG1;
+  static const CATALOG2 = _Paths.CATALOG2;
+  static const SHORTBY = _Paths.SHORTBY;
+  static const NO_16 = _Paths.NO_16;
+  static const NO16_FILTERS = _Paths.NO16_FILTERS;
+  static const NO17_FILTER_LIST = _Paths.NO17_FILTER_LIST;
+  static const NO18_SELECTSIZE = _Paths.NO18_SELECTSIZE;
+  static const NO19_PRODUCT_CARD = _Paths.NO19_PRODUCT_CARD;
 }
 
 abstract class _Paths {
@@ -38,4 +47,13 @@ abstract class _Paths {
   static const MAIN2 = '/main2';
   static const MAIN3 = '/main3';
   static const CATATORIES = '/catatories';
+  static const CATAGORIES2 = '/catagories2';
+  static const CATALOG1 = '/catalog1';
+  static const CATALOG2 = '/catalog2';
+  static const SHORTBY = '/shortby';
+  static const NO_16 = '/no-16';
+  static const NO16_FILTERS = '/no16-filters';
+  static const NO17_FILTER_LIST = '/no17-filter-list';
+  static const NO18_SELECTSIZE = '/no18-selectsize';
+  static const NO19_PRODUCT_CARD = '/no19-product-card';
 }

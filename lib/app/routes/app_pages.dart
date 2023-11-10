@@ -1,5 +1,11 @@
 import 'package:get/get.dart';
 
+import '../modules/catagories2/bindings/catagories2_binding.dart';
+import '../modules/catagories2/views/catagories2_view.dart';
+import '../modules/catalog1/bindings/catalog1_binding.dart';
+import '../modules/catalog1/views/catalog1_view.dart';
+import '../modules/catalog2/bindings/catalog2_binding.dart';
+import '../modules/catalog2/views/catalog2_view.dart';
 import '../modules/catatories/bindings/catatories_binding.dart';
 import '../modules/catatories/views/catatories_view.dart';
 import '../modules/forgot_password/bindings/forgot_password_binding.dart';
@@ -14,8 +20,18 @@ import '../modules/main3/bindings/main3_binding.dart';
 import '../modules/main3/views/main3_view.dart';
 import '../modules/mainpage_1/bindings/mainpage_1_binding.dart';
 import '../modules/mainpage_1/views/mainpage_1_view.dart';
+import '../modules/no16_filters/bindings/no16_filters_binding.dart';
+import '../modules/no16_filters/views/no16_filters_view.dart';
+import '../modules/no17_filter_list/bindings/no17_filter_list_binding.dart';
+import '../modules/no17_filter_list/views/no17_filter_list_view.dart';
+import '../modules/no18_selectsize/bindings/no18_selectsize_binding.dart';
+import '../modules/no18_selectsize/views/no18_selectsize_view.dart';
+import '../modules/no19_product_card/bindings/no19_product_card_binding.dart';
+import '../modules/no19_product_card/views/no19_product_card_view.dart';
 import '../modules/routes/bindings/routes_binding.dart';
 import '../modules/routes/views/routes_view.dart';
+import '../modules/shortby/bindings/shortby_binding.dart';
+import '../modules/shortby/views/shortby_view.dart';
 import '../modules/signup/bindings/signup_binding.dart';
 import '../modules/signup/views/signup_view.dart';
 import '../modules/temp_widgets/bindings/temp_widgets_binding.dart';
@@ -98,7 +114,7 @@ class AppPages {
     ),
     GetPage(
       name: _Paths.TEMP_WIDGETS,
-      page: () => const TempWidgetsView(),
+      page: () => TempWidgetsView(),
       binding: TempWidgetsBinding(),
     ),
     GetPage(
@@ -115,6 +131,51 @@ class AppPages {
       name: _Paths.CATATORIES,
       page: () => const CatatoriesView(),
       binding: CatatoriesBinding(),
+    ),
+    GetPage(
+      name: _Paths.CATAGORIES2,
+      page: () => const Catagories2View(),
+      binding: Catagories2Binding(),
+    ),
+    GetPage(
+      name: _Paths.CATALOG1,
+      page: () => const Catalog1View(),
+      binding: Catalog1Binding(),
+    ),
+    GetPage(
+      name: _Paths.CATALOG2,
+      page: () => const Catalog2View(),
+      binding: Catalog2Binding(),
+    ),
+    GetPage(
+      name: _Paths.SHORTBY,
+      page: () => const ShortbyView(),
+      binding: ShortbyBinding(),
+    ),
+    // GetPage(
+    //   name: _Paths.NO_16,
+    //   page: () => const No16View(),
+    //   binding: No16Binding(),
+    // ),
+    GetPage(
+      name: _Paths.NO16_FILTERS,
+      page: () => No16FiltersView(),
+      binding: No16FiltersBinding(),
+    ),
+    GetPage(
+      name: _Paths.NO17_FILTER_LIST,
+      page: () => No17FilterListView(),
+      binding: No17FilterListBinding(),
+    ),
+    GetPage(
+      name: _Paths.NO18_SELECTSIZE,
+      page: () => No18SelectsizeView(),
+      binding: No18SelectsizeBinding(),
+    ),
+    GetPage(
+      name: _Paths.NO19_PRODUCT_CARD,
+      page: () => const No19ProductCardView(),
+      binding: No19ProductCardBinding(),
     ),
   ];
 }

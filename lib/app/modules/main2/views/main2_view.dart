@@ -5,6 +5,7 @@ import 'package:zenazon/widgets/8-%20MainPage1/mainpage1_bottom_item_strip.dart'
 import 'package:zenazon/widgets/9-%20Main2/main2_product_card.dart';
 import 'package:zenazon/widgets/9-%20Main2/main2_product_strip.dart';
 
+import '../../../../widgets/bottom_nav_bar.dart';
 import '../../../utility/consts.dart';
 import '../controllers/main2_controller.dart';
 
@@ -70,42 +71,7 @@ class Main2View extends GetView<Main2Controller> {
           ],
         ),
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        type: BottomNavigationBarType.shifting,
-        backgroundColor: AppColors.whiteColor,
-        selectedItemColor: AppColors.redColor,
-        unselectedItemColor: AppColors.blackColor,
-        selectedFontSize: 12.dp,
-        unselectedFontSize: 10.dp,
-        items: const [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: 'Home',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.shopping_cart_outlined),
-            label: 'Shop',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.shopping_bag_outlined,
-            ),
-            label: 'Bag',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.favorite_border_outlined,
-            ),
-            label: 'Favourites',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.person,
-            ),
-            label: 'Profile',
-          ),
-        ],
-      ),
+      bottomNavigationBar: const BottomNavBar(),
     );
   }
 }

@@ -5,6 +5,7 @@ import 'package:zenazon/widgets/11-catagories/mans_tab.dart';
 import 'package:zenazon/widgets/11-catagories/woman_tab.dart';
 
 import '../../../../widgets/11-catagories/customTabBar.dart';
+import '../../../../widgets/bottom_nav_bar.dart';
 import '../controllers/catatories_controller.dart';
 
 class CatatoriesView extends GetView<CatatoriesController> {
@@ -35,42 +36,7 @@ class CatatoriesView extends GetView<CatatoriesController> {
               KidsTab(),
             ],
           ),
-          bottomNavigationBar: BottomNavigationBar(
-            type: BottomNavigationBarType.fixed,
-            backgroundColor: AppColors.whiteColor,
-            selectedItemColor: AppColors.redColor,
-            unselectedItemColor: AppColors.blackColor,
-            selectedFontSize: 12.dp,
-            unselectedFontSize: 12.dp,
-            items: const [
-              BottomNavigationBarItem(
-                icon: Icon(Icons.home),
-                label: 'Home',
-              ),
-              BottomNavigationBarItem(
-                icon: Icon(Icons.shopping_cart_outlined),
-                label: 'Shop',
-              ),
-              BottomNavigationBarItem(
-                icon: Icon(
-                  Icons.shopping_bag_outlined,
-                ),
-                label: 'Bag',
-              ),
-              BottomNavigationBarItem(
-                icon: Icon(
-                  Icons.favorite_border_outlined,
-                ),
-                label: 'Favourites',
-              ),
-              BottomNavigationBarItem(
-                icon: Icon(
-                  Icons.person_outline_outlined,
-                ),
-                label: 'Profile',
-              ),
-            ],
-          ),
+          bottomNavigationBar: const BottomNavBar(),
         ),
       ),
     );
