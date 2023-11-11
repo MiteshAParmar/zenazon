@@ -1,9 +1,6 @@
-import 'package:flutter/material.dart';
-
-import 'package:get/get.dart';
 import 'package:zenazon/app/utility/consts.dart';
-import 'package:zenazon/app/utility/lists.dart';
-import 'package:zenazon/widgets/13-Catalog-1/Catalog1FilterIconAndPriceHighToLow_Strip.dart';
+
+import 'package:zenazon/widgets/13-Catalog-1/catalog1_filter_icon_price_high_to_low_strip.dart';
 import 'package:zenazon/widgets/13-Catalog-1/womans_tops_and_horizontal_listview.dart';
 import 'package:zenazon/widgets/14-catalog-2/catalog2_gridview_builder.dart';
 import 'package:zenazon/widgets/18-Select%20Size/no18_bottomsheet.dart';
@@ -21,7 +18,9 @@ class No18SelectsizeView extends GetView<No18SelectsizeController> {
   Widget build(BuildContext context) {
     Get.put(No18Sizecontroller());
     return Scaffold(
+      backgroundColor: AppColors.scaffoldbg,
       appBar: AppBar(
+        backgroundColor: AppColors.scaffoldbg,
         title: const Text("Women's tops"),
         actions: [
           IconButton(

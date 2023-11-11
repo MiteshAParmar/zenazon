@@ -15,6 +15,7 @@ class VisualSearchView extends GetView<VisualSearchController> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: AppColors.scaffoldbg,
         // title: Text('VisualSearchView'),
         title: Text(
           'Visual Search',

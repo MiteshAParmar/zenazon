@@ -1,4 +1,3 @@
-import 'package:get/get.dart';
 import 'package:zenazon/app/utility/consts.dart';
 
 class Transparentutton extends StatelessWidget {

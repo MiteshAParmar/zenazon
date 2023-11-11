@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, avoid_unnecessary_containers
 
 import 'package:zenazon/app/utility/consts.dart';
 
@@ -97,7 +97,7 @@ class Catalog2tile2 extends StatelessWidget {
         Positioned(
           bottom: MediaQuery.of(context).size.height / 10.8,
           right: 0,
-          child: const LikedUnlikedRoundedBox(liked: true),
+          child: LikedUnlikedRoundedBox(),
         ),
       ],
     );

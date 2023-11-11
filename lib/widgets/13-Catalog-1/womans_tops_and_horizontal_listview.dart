@@ -1,7 +1,5 @@
 import 'package:zenazon/app/utility/consts.dart';
 
-import '../../app/utility/lists.dart';
-
 class Catalog1WomansTopAndHorizontalListView extends StatelessWidget {
   const Catalog1WomansTopAndHorizontalListView({
     super.key,

@@ -1,7 +1,5 @@
 // ignore_for_file: avoid_print
 
-import 'package:get/get.dart';
-
 import '../../../../widgets/1 -Signup & Login page/login_email_textformfield.dart';
 import '../../../../widgets/1 -Signup & Login page/login_password_textformfield.dart';
 import '../../../../widgets/1 -Signup & Login page/red_button.dart';

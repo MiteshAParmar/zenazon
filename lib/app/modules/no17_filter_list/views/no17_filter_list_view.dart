@@ -1,6 +1,3 @@
-import 'package:flutter/material.dart';
-
-import 'package:get/get.dart';
 import 'package:zenazon/app/utility/consts.dart';
 import 'package:zenazon/widgets/17-Fiters_lists/filters_lists_search_bar.dart';
 import 'package:zenazon/widgets/17-Fiters_lists/no17_filter_list_builder.dart';
@@ -17,7 +14,9 @@ class No17FilterListView extends GetView<No17FilterListController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: AppColors.scaffoldbg,
       appBar: AppBar(
+        backgroundColor: AppColors.scaffoldbg,
         title: const Text('Brand'),
         actions: [
           IconButton(
@@ -30,11 +29,11 @@ class No17FilterListView extends GetView<No17FilterListController> {
         ],
         centerTitle: true,
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(15.0),
+      body: const Padding(
+        padding: EdgeInsets.all(15.0),
         child: Center(
           child: Column(
-            children: const [
+            children: [
               CustomSearchBar(),
               No17_FilterListsBuilter(),
             ],

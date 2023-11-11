@@ -1,8 +1,7 @@
-import 'package:flutter/material.dart';
+// ignore_for_file: unused_import
 
-import 'package:get/get.dart';
 import 'package:zenazon/app/utility/consts.dart';
-import 'package:zenazon/app/utility/lists.dart';
+
 import 'package:zenazon/widgets/1%20-Signup%20&%20Login%20page/red_button.dart';
 import 'package:zenazon/widgets/bottom_nav_bar.dart';
 
@@ -14,7 +13,9 @@ class Catagories2View extends GetView<Catagories2Controller> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: AppColors.scaffoldbg,
       appBar: AppBar(
+        backgroundColor: AppColors.scaffoldbg,
         title: Text(
           'Catagories',
           style: GoogleFonts.montserrat(

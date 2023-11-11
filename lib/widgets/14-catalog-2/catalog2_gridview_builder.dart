@@ -1,6 +1,4 @@
-import 'package:get/get.dart';
 import 'package:zenazon/app/utility/consts.dart';
-import 'package:zenazon/app/utility/lists.dart';
 
 import 'catalog2tile2.dart';
 

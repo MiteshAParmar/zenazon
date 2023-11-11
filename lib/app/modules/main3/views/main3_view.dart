@@ -1,6 +1,5 @@
 // ignore_for_file: sized_box_for_whitespace
 
-import 'package:get/get.dart';
 import 'package:zenazon/app/utility/consts.dart';
 import 'package:zenazon/widgets/10-main3/main3_fullpage_tiles_banner.dart';
 import '../../../../widgets/bottom_nav_bar.dart';
@@ -11,9 +10,10 @@ class Main3View extends GetView<Main3Controller> {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Main3FullpageTilesBanner(),
-      bottomNavigationBar: BottomNavBar(),
+    return Scaffold(
+      backgroundColor: AppColors.scaffoldbg,
+      body: const Main3FullpageTilesBanner(),
+      bottomNavigationBar: const BottomNavBar(),
     );
   }
 }

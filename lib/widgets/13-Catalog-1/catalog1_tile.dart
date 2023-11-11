@@ -109,7 +109,7 @@ class Catalog1Tile extends StatelessWidget {
             Positioned(
               bottom: 13,
               right: 0,
-              child: LikedUnlikedRoundedBox(liked: liked),
+              child: LikedUnlikedRoundedBox(),
             ),
           ],
         ),

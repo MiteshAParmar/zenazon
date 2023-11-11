@@ -11,3 +11,4 @@ export 'package:zenazon/widgets/big_text.dart';
 export 'package:zenazon/widgets/small_text.dart';
 
 export 'package:get/get.dart' hide ScreenType;
+export 'package:zenazon/app/utility/lists.dart';

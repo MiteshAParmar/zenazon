@@ -24,11 +24,11 @@ class FiltersBottomSheet extends StatelessWidget {
   Widget build(BuildContext context) {
     return Wrap(
       children: <Widget>[
-        Row(
+        const Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Column(
-              children: const [
+              children: [
                 // Padding(
                 //   //------Gray Line on top of the Sort by text-------
                 //   padding: const EdgeInsets.only(top: 10),

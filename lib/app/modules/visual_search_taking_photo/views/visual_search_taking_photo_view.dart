@@ -1,4 +1,3 @@
-import 'package:get/get.dart';
 import 'package:zenazon/widgets/5-%20Visual%20Search%20by%20taking%20photo/bottom_camara_strip.dart';
 
 import '../../../utility/consts.dart';
@@ -10,7 +9,9 @@ class VisualSearchTakingPhotoView
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: AppColors.scaffoldbg,
       appBar: AppBar(
+        backgroundColor: AppColors.scaffoldbg,
         // title: Text('VisualSearchView'),
         title: Text(
           'Search by taking photo',

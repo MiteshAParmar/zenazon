@@ -9,10 +9,10 @@ class Main2PproductStrip extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
+    return const SingleChildScrollView(
       scrollDirection: Axis.horizontal,
       child: Row(
-        children: const [
+        children: [
           ProductCard(
               rating: 3,
               itemCategory: 'Dorothy Perkins',

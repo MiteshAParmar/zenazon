@@ -1,5 +1,3 @@
-import 'package:get/get.dart';
-
 import 'package:zenazon/app/utility/consts.dart';
 import 'package:zenazon/widgets/16-Filters/filters_sizes_strip.dart';
 // ignore: unnecessary_import
@@ -22,6 +20,6 @@ class TempWidgetsView extends GetView<TempWidgetsController> {
             ),
           ),
         ),
-        body: FilterSizeStrip());
+        body: const FilterSizeStrip());
   }
 }

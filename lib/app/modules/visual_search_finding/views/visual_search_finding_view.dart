@@ -1,6 +1,5 @@
 // ignore_for_file: prefer_const_constructors
 
-import 'package:get/get.dart';
 import 'package:zenazon/app/utility/consts.dart';
 
 import '../controllers/visual_search_finding_controller.dart';
@@ -10,7 +9,8 @@ class VisualSearchFindingView extends GetView<VisualSearchFindingController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(centerTitle: true),
+      backgroundColor: AppColors.scaffoldbg,
+      appBar: AppBar(backgroundColor: AppColors.scaffoldbg, centerTitle: true),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,

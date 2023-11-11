@@ -1,11 +1,9 @@
-import 'package:get/get.dart';
-
 import 'package:zenazon/app/utility/consts.dart';
-import 'package:zenazon/app/utility/lists.dart';
+
 import 'package:zenazon/widgets/13-Catalog-1/catalog1_tile.dart';
 import 'package:zenazon/widgets/bottom_nav_bar.dart';
 
-import '../../../../widgets/13-Catalog-1/Catalog1FilterIconAndPriceHighToLow_Strip.dart';
+import '../../../../widgets/13-Catalog-1/catalog1_filter_icon_price_high_to_low_strip.dart';
 import '../../../../widgets/13-Catalog-1/womans_tops_and_horizontal_listview.dart';
 import '../controllers/catalog1_controller.dart';
 

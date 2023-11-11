@@ -1,8 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_sizer/flutter_sizer.dart';
-
-import 'package:get/get.dart';
-import 'package:zenazon/widgets/13-Catalog-1/Catalog1FilterIconAndPriceHighToLow_Strip.dart';
+import 'package:zenazon/widgets/13-Catalog-1/catalog1_filter_icon_price_high_to_low_strip.dart';
 import 'package:zenazon/widgets/13-Catalog-1/womans_tops_and_horizontal_listview.dart';
 import 'package:zenazon/widgets/14-catalog-2/catalog2_gridview_builder.dart';
 import 'package:zenazon/widgets/bottom_nav_bar.dart';
@@ -83,7 +79,9 @@ class ShortbyView extends GetView<ShortbyController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: AppColors.scaffoldbg,
       appBar: AppBar(
+        backgroundColor: AppColors.scaffoldbg,
         title: Text(
           "Women's Tops",
           style: GoogleFonts.montserrat(

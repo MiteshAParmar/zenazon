@@ -1,4 +1,3 @@
-// ignore: file_names
 import 'package:zenazon/app/utility/consts.dart';
 
 class Catalog1FilterIconAndPriceHighToLowStrip extends StatelessWidget {

@@ -1,7 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:zenazon/app/utility/consts.dart';
-import 'package:zenazon/app/utility/lists.dart';
 
 // Make sure to put this controller in the dependency tree before opening the bottom sheet,
 // typically in the page where you're planning to open the bottom sheet from.
@@ -20,7 +17,6 @@ class No18BottomSheet extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // You can give your bottom sheet a specific height if needed
-    double bottomSheetHeight = MediaQuery.of(context).size.height * 0.6;
     return Wrap(
       children: [
         Center(
@@ -50,7 +46,7 @@ class No18BottomSheet extends StatelessWidget {
             ],
           ),
         ),
-        Container(
+        SizedBox(
           height: 30.h,
           child: GridView.builder(
             gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(

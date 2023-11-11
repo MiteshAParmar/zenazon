@@ -114,7 +114,7 @@ class AppPages {
     ),
     GetPage(
       name: _Paths.TEMP_WIDGETS,
-      page: () => TempWidgetsView(),
+      page: () => const TempWidgetsView(),
       binding: TempWidgetsBinding(),
     ),
     GetPage(

@@ -1,6 +1,5 @@
 // ignore_for_file: prefer_const_constructors
 
-import 'package:get/get.dart';
 import 'package:zenazon/app/utility/consts.dart';
 import 'package:zenazon/widgets/1%20-Signup%20&%20Login%20page/red_button.dart';
 

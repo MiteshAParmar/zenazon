@@ -1,6 +1,5 @@
 // ignore_for_file: prefer_const_constructors
 
-import 'package:get/get.dart';
 import 'package:zenazon/app/utility/consts.dart';
 
 class FilterBrandStrip extends StatelessWidget {

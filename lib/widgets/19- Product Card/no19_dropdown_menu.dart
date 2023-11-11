@@ -4,7 +4,7 @@ class No19DropdownMenu extends StatelessWidget {
   final List<String> items;
   final String initialValue;
 
-  No19DropdownMenu({
+  const No19DropdownMenu({
     Key? key,
     required this.items,
     this.initialValue = '',
@@ -26,9 +26,10 @@ class No19DropdownMenu extends StatelessWidget {
 
     return Obx(() {
       return Container(
-        padding: EdgeInsets.symmetric(horizontal: 5),
+        padding: const EdgeInsets.symmetric(horizontal: 5),
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.all(Radius.circular(10)),
+          color: AppColors.whiteColor,
+          borderRadius: const BorderRadius.all(Radius.circular(10)),
           border: Border.all(
             color: Colors.red.shade50,
             width: 1,
@@ -40,7 +41,7 @@ class No19DropdownMenu extends StatelessWidget {
             value: controller.selectedValue.value.isNotEmpty
                 ? controller.selectedValue.value
                 : null,
-            hint: Text('Select an item'),
+            hint: const Text('Select an item'),
             items: items.map((String value) {
               return DropdownMenuItem<String>(
                 value: value,
@@ -48,7 +49,7 @@ class No19DropdownMenu extends StatelessWidget {
               );
             }).toList(),
             dropdownColor: Colors.red.shade50,
-            borderRadius: BorderRadius.all(Radius.circular(15)),
+            borderRadius: const BorderRadius.all(Radius.circular(15)),
             onChanged: (newValue) {
               controller.setSelectedValue(newValue!);
             },

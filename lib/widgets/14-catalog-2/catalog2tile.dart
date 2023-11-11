@@ -96,7 +96,7 @@ class Catalog2ItemTile extends StatelessWidget {
         Positioned(
           bottom: MediaQuery.of(context).size.height / 6.8,
           right: 0,
-          child: const LikedUnlikedRoundedBox(liked: true),
+          child: LikedUnlikedRoundedBox(),
         ),
       ],
     );

@@ -26,7 +26,7 @@ class CatagoriesItemtile extends StatelessWidget {
             (index) => BoxShadow(
               color: AppColors.greyColor.withOpacity(.2),
               blurRadius: 2,
-              offset: Offset(0, 3),
+              offset: const Offset(0, 3),
             ),
           ),
           color: AppColors.whiteColor,

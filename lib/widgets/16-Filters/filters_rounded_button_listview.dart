@@ -1,6 +1,4 @@
-import 'package:get/get.dart';
 import 'package:zenazon/app/utility/consts.dart';
-import 'package:zenazon/app/utility/lists.dart';
 
 import 'filter_button_listviewbuilder_controller.dart';
 
@@ -50,7 +48,7 @@ class FiltersRoundedButtonListViewBuilder extends StatelessWidget {
               return GestureDetector(
                 onTap: () {
                   controller.selectedIndex.value = index;
-                  print('Selected Color: ${filter_buttons_colors[index]}');
+                  // print('Selected Color: ${filter_buttons_colors[index]}');
                 },
                 child: Obx(
                   () => Container(

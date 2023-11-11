@@ -188,3 +188,11 @@ final List<String> filterlists = [
   'Vero Moda',
   'Pantaloons',
 ];
+
+//--------------no19 Rating List-----------------//
+
+final List<int> Ratinglist = [
+  //-- list of random numbers between 1 and 20
+
+  2, 3, 5, 2, 2, 3, 1, 1, 1,
+];

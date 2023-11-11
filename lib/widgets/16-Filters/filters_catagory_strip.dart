@@ -1,6 +1,4 @@
-import 'package:get/get.dart';
 import 'package:zenazon/app/utility/consts.dart';
-import 'package:zenazon/app/utility/lists.dart';
 
 class FilterCatagoryStrip extends StatelessWidget {
   const FilterCatagoryStrip({

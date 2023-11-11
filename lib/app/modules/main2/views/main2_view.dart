@@ -1,6 +1,5 @@
 // ignore_for_file: prefer_const_constructors, unused_import
 
-import 'package:get/get.dart';
 import 'package:zenazon/widgets/8-%20MainPage1/mainpage1_bottom_item_strip.dart';
 import 'package:zenazon/widgets/9-%20Main2/main2_product_card.dart';
 import 'package:zenazon/widgets/9-%20Main2/main2_product_strip.dart';
@@ -14,8 +13,9 @@ class Main2View extends GetView<Main2Controller> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: AppColors.scaffoldbg,
       appBar: AppBar(
-        backgroundColor: AppColors.whiteColor,
+        backgroundColor: AppColors.scaffoldbg,
         title: Text('Main2View'),
         centerTitle: true,
       ),

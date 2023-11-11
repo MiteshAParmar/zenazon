@@ -1,5 +1,5 @@
 import 'package:zenazon/app/utility/consts.dart';
-import 'package:get/get.dart';
+
 import 'package:zenazon/widgets/11-catagories/kids_tab.dart';
 import 'package:zenazon/widgets/11-catagories/mans_tab.dart';
 import 'package:zenazon/widgets/11-catagories/woman_tab.dart';
@@ -17,8 +17,9 @@ class CatatoriesView extends GetView<CatatoriesController> {
       home: DefaultTabController(
         length: 3,
         child: Scaffold(
+          backgroundColor: AppColors.scaffoldbg,
           appBar: AppBar(
-            backgroundColor: AppColors.whiteColor,
+            backgroundColor: AppColors.scaffoldbg,
             title: Text(
               'Categories',
               style: GoogleFonts.montserrat(

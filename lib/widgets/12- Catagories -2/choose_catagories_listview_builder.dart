@@ -1,7 +1,5 @@
 import 'package:zenazon/app/utility/consts.dart';
 
-import '../../app/utility/lists.dart';
-
 class Catavory2ListViewBuilder extends StatelessWidget {
   const Catavory2ListViewBuilder({
     super.key,

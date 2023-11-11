@@ -9,10 +9,10 @@ class Mainpage1BottomItemStrip extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
+    return const SingleChildScrollView(
       scrollDirection: Axis.horizontal,
       child: Row(
-        children: const [
+        children: [
           MainPage1Item(
               imagepath: 'assets/images/mainpage1_tshirt.png',
               price: '2000',
