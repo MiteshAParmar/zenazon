@@ -3,8 +3,8 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
-import 'package:zenazon/app/modules/signup/views/signup_view.dart';
-import 'package:zenazon/app/modules/temp_widgets/views/temp_widgets_view.dart';
+import 'package:zenazon/app/modules/no1_signup/views/signup_view.dart';
+import 'package:zenazon/app/modules/no0_temp_widgets/views/temp_widgets_view.dart';
 import 'package:zenazon/app/routes/app_pages.dart';
 
 import '../controllers/routes_controller.dart';

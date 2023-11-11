@@ -1,25 +1,24 @@
 import 'package:get/get.dart';
 
-import '../modules/catagories2/bindings/catagories2_binding.dart';
-import '../modules/catagories2/views/catagories2_view.dart';
-import '../modules/catalog1/bindings/catalog1_binding.dart';
-import '../modules/catalog1/views/catalog1_view.dart';
-import '../modules/catalog2/bindings/catalog2_binding.dart';
-import '../modules/catalog2/views/catalog2_view.dart';
-import '../modules/catatories/bindings/catatories_binding.dart';
-import '../modules/catatories/views/catatories_view.dart';
-import '../modules/forgot_password/bindings/forgot_password_binding.dart';
-import '../modules/forgot_password/views/forgot_password_view.dart';
-import '../modules/home/bindings/home_binding.dart';
-import '../modules/home/views/home_view.dart';
-import '../modules/login/bindings/login_binding.dart';
-import '../modules/login/views/login_view.dart';
-import '../modules/main2/bindings/main2_binding.dart';
-import '../modules/main2/views/main2_view.dart';
-import '../modules/main3/bindings/main3_binding.dart';
-import '../modules/main3/views/main3_view.dart';
-import '../modules/mainpage_1/bindings/mainpage_1_binding.dart';
-import '../modules/mainpage_1/views/mainpage_1_view.dart';
+import '../modules/no12_catagories2/bindings/catagories2_binding.dart';
+import '../modules/no12_catagories2/views/catagories2_view.dart';
+import '../modules/no13_catalog1/bindings/catalog1_binding.dart';
+import '../modules/no13_catalog1/views/catalog1_view.dart';
+import '../modules/no14_catalog2/bindings/catalog2_binding.dart';
+import '../modules/no14_catalog2/views/catalog2_view.dart';
+import '../modules/no11_catatories/bindings/catatories_binding.dart';
+import '../modules/no11_catatories/views/catatories_view.dart';
+import '../modules/no3_forgot_password/bindings/forgot_password_binding.dart';
+import '../modules/no3_forgot_password/views/forgot_password_view.dart';
+
+import '../modules/no2_login/bindings/login_binding.dart';
+import '../modules/no2_login/views/login_view.dart';
+import '../modules/no9_main2/bindings/main2_binding.dart';
+import '../modules/no9_main2/views/main2_view.dart';
+import '../modules/no10_main3/bindings/main3_binding.dart';
+import '../modules/no10_main3/views/main3_view.dart';
+import '../modules/no8_mainpage_1/bindings/mainpage_1_binding.dart';
+import '../modules/no8_mainpage_1/views/mainpage_1_view.dart';
 import '../modules/no16_filters/bindings/no16_filters_binding.dart';
 import '../modules/no16_filters/views/no16_filters_view.dart';
 import '../modules/no17_filter_list/bindings/no17_filter_list_binding.dart';
@@ -28,22 +27,22 @@ import '../modules/no18_selectsize/bindings/no18_selectsize_binding.dart';
 import '../modules/no18_selectsize/views/no18_selectsize_view.dart';
 import '../modules/no19_product_card/bindings/no19_product_card_binding.dart';
 import '../modules/no19_product_card/views/no19_product_card_view.dart';
-import '../modules/routes/bindings/routes_binding.dart';
-import '../modules/routes/views/routes_view.dart';
-import '../modules/shortby/bindings/shortby_binding.dart';
-import '../modules/shortby/views/shortby_view.dart';
-import '../modules/signup/bindings/signup_binding.dart';
-import '../modules/signup/views/signup_view.dart';
-import '../modules/temp_widgets/bindings/temp_widgets_binding.dart';
-import '../modules/temp_widgets/views/temp_widgets_view.dart';
-import '../modules/visual_search/bindings/visual_search_binding.dart';
-import '../modules/visual_search/views/visual_search_view.dart';
-import '../modules/visual_search_crop_item/bindings/visual_search_crop_item_binding.dart';
-import '../modules/visual_search_crop_item/views/visual_search_crop_item_view.dart';
-import '../modules/visual_search_finding/bindings/visual_search_finding_binding.dart';
-import '../modules/visual_search_finding/views/visual_search_finding_view.dart';
-import '../modules/visual_search_taking_photo/bindings/visual_search_taking_photo_binding.dart';
-import '../modules/visual_search_taking_photo/views/visual_search_taking_photo_view.dart';
+import '../modules/page_index/bindings/routes_binding.dart';
+import '../modules/page_index/views/routes_view.dart';
+import '../modules/no15_shortby/bindings/shortby_binding.dart';
+import '../modules/no15_shortby/views/shortby_view.dart';
+import '../modules/no1_signup/bindings/signup_binding.dart';
+import '../modules/no1_signup/views/signup_view.dart';
+import '../modules/no0_temp_widgets/bindings/temp_widgets_binding.dart';
+import '../modules/no0_temp_widgets/views/temp_widgets_view.dart';
+import '../modules/no4_visual_search/bindings/visual_search_binding.dart';
+import '../modules/no4_visual_search/views/visual_search_view.dart';
+import '../modules/no6_visual_search_crop_item/bindings/visual_search_crop_item_binding.dart';
+import '../modules/no6_visual_search_crop_item/views/visual_search_crop_item_view.dart';
+import '../modules/no7_visual_search_finding/bindings/visual_search_finding_binding.dart';
+import '../modules/no7_visual_search_finding/views/visual_search_finding_view.dart';
+import '../modules/no5_visual_search_taking_photo/bindings/visual_search_taking_photo_binding.dart';
+import '../modules/no5_visual_search_taking_photo/views/visual_search_taking_photo_view.dart';
 
 // ignore_for_file: constant_identifier_names
 
@@ -55,11 +54,6 @@ class AppPages {
   static const INITIAL = Routes.ROUTES;
 
   static final routes = [
-    GetPage(
-      name: _Paths.HOME,
-      page: () => const HomeView(),
-      binding: HomeBinding(),
-    ),
     GetPage(
       name: _Paths.SIGNUP,
       page: () => const SignupView(),
