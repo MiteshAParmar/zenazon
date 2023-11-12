@@ -55,6 +55,7 @@ class AppColors {
   static Color successColor = Color(0xff8CC540);
   static Color scaffoldbg = Color.fromRGBO(236, 235, 235, 1);
   static Color starcolor = Color.fromRGBO(255, 168, 73, 1);
+  static Color blackcofee = Color.fromRGBO(42, 42, 42, 1);
 }
 
 

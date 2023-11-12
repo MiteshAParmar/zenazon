@@ -1,4 +1,7 @@
+// ignore_for_file: sized_box_for_whitespace
+
 import 'package:zenazon/app/utility/consts.dart';
+import 'package:zenazon/widgets/1%20-Signup%20&%20Login%20page/red_button.dart';
 
 // Make sure to put this controller in the dependency tree before opening the bottom sheet,
 // typically in the page where you're planning to open the bottom sheet from.
@@ -46,51 +49,82 @@ class No18BottomSheet extends StatelessWidget {
             ],
           ),
         ),
-        SizedBox(
-          height: 30.h,
-          child: GridView.builder(
-            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: 3,
-              childAspectRatio: 2.6, // Aspect ratio of each grid item
-              mainAxisSpacing: 10, // Spacing between items in the main axis
-              crossAxisSpacing: 10, // Spacing between items in the cross axis
-            ),
-            itemCount: allSizes.length,
-            padding: const EdgeInsets.all(10), // Padding inside the GridView
-            itemBuilder: (context, index) {
-              // The builder for each grid item
-              return GestureDetector(
-                onTap: () {
-                  if (controller.selectedSize.contains(allSizes[index])) {
-                    controller.selectedSize.remove(allSizes[index]);
-                  } else {
-                    controller.selectedSize.add(allSizes[index]);
-                  }
-                },
-                child: Obx(
-                  () => Container(
-                    decoration: BoxDecoration(
-                      color: controller.selectedSize.contains(allSizes[index])
-                          ? Colors.red
-                          : Colors.grey[300],
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    child: Center(
-                      child: Text(
-                        allSizes[index],
-                        style: TextStyle(
+        Column(
+          children: [
+            Container(
+              // color: Colors.red.shade50,
+              height: 15.h,
+              child: GridView.builder(
+                physics: const NeverScrollableScrollPhysics(),
+                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: 3,
+                  childAspectRatio: 2.6, // Aspect ratio of each grid item
+                  mainAxisSpacing: 10, // Spacing between items in the main axis
+                  crossAxisSpacing:
+                      10, // Spacing between items in the cross axis
+                ),
+                itemCount: allSizes.length - 5,
+                padding:
+                    const EdgeInsets.all(10), // Padding inside the GridView
+                itemBuilder: (context, index) {
+                  // The builder for each grid item
+                  return GestureDetector(
+                    onTap: () {
+                      if (controller.selectedSize.contains(allSizes[index])) {
+                        controller.selectedSize.remove(allSizes[index]);
+                      } else {
+                        controller.selectedSize.add(allSizes[index]);
+                      }
+                    },
+                    child: Obx(
+                      () => Container(
+                        decoration: BoxDecoration(
                           color:
                               controller.selectedSize.contains(allSizes[index])
+                                  ? Colors.red
+                                  : Colors.grey[300],
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        child: Center(
+                          child: Text(
+                            allSizes[index],
+                            style: TextStyle(
+                              color: controller.selectedSize
+                                      .contains(allSizes[index])
                                   ? Colors.white
                                   : Colors.black,
+                            ),
+                          ),
                         ),
                       ),
                     ),
+                  );
+                },
+              ),
+            ),
+            const Padding(
+              padding: EdgeInsets.all(8.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  SmallText(
+                    "Size info",
+                    fontSize: 15,
+                    fontWeight: FontWeight.w500,
                   ),
-                ),
-              );
-            },
-          ),
+                  Icon(
+                    Icons.arrow_forward_ios,
+                    size: 15,
+                  ),
+                ],
+              ),
+            ),
+            const Padding(
+              padding: EdgeInsets.all(18.0),
+              child: RedButton(title: 'ADD TO CART'),
+            ),
+            const SizedBox(height: 10),
+          ],
         ),
       ],
     );

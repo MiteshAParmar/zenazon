@@ -45,7 +45,10 @@ class No19DropdownMenu extends StatelessWidget {
             items: items.map((String value) {
               return DropdownMenuItem<String>(
                 value: value,
-                child: SmallText(value),
+                child: Padding(
+                  padding: const EdgeInsets.only(left: 10),
+                  child: SmallText(value),
+                ),
               );
             }).toList(),
             dropdownColor: Colors.red.shade50,

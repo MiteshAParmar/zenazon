@@ -46,24 +46,27 @@ class StarRatingWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
-        ...List.generate(
-          maxRating,
-          (index) => Icon(
-            index < rating ? Icons.star : Icons.star_border,
-            color: color,
-            size: 15, // You can change this to your `.dp` format
+    return SizedBox(
+      width: 150,
+      child: Row(
+        children: [
+          ...List.generate(
+            maxRating,
+            (index) => Icon(
+              index < rating ? Icons.star : Icons.star_border,
+              color: color,
+              size: 15, // You can change this to your `.dp` format
+            ),
           ),
-        ),
-        Text(
-          '($rating)',
-          style: GoogleFonts.montserrat(
-            color: color,
-            fontSize: 12, // You can change this to your `.dp` format
+          Text(
+            '($rating)',
+            style: GoogleFonts.montserrat(
+              color: color,
+              fontSize: 12, // You can change this to your `.dp` format
+            ),
           ),
-        ),
-      ],
+        ],
+      ),
     );
   }
 }

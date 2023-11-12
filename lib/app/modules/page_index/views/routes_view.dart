@@ -16,6 +16,7 @@ class RoutesView extends GetView<RoutesController> {
     return Scaffold(
       appBar: AppBar(),
       body: SingleChildScrollView(
+        reverse: true,
         scrollDirection: Axis.vertical,
         child: Padding(
           padding: const EdgeInsets.all(20.0),
