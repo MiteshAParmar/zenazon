@@ -1,4 +1,5 @@
 import 'package:zenazon/app/utility/consts.dart';
+import 'package:zenazon/widgets/0-TestWidgets/animated_opecity.dart';
 import 'package:zenazon/widgets/16-Filters/filters_sizes_strip.dart';
 // ignore: unnecessary_import
 import '../controllers/temp_widgets_controller.dart';
@@ -20,6 +21,8 @@ class TempWidgetsView extends GetView<TempWidgetsController> {
             ),
           ),
         ),
-        body: const FilterSizeStrip());
+        body: Center(child: AnimatedOpacityWidget())
+        // FiltersSizesStrip()
+        );
   }
 }

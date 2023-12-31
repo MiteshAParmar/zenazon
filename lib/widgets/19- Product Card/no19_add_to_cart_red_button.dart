@@ -3,6 +3,8 @@
 import 'package:zenazon/app/utility/consts.dart';
 import 'package:zenazon/widgets/1%20-Signup%20&%20Login%20page/red_button.dart';
 
+import '../18-Select Size/no18_bottomsheet.dart';
+
 class AddtoCartRedButton extends StatelessWidget {
   const AddtoCartRedButton({super.key});
 
@@ -26,7 +28,10 @@ class AddtoCartRedButton extends StatelessWidget {
         children: [
           Padding(
             padding: EdgeInsets.symmetric(horizontal: 20),
-            child: RedButton(title: 'ADD TO CART'),
+            child: RedButton(
+              title: 'ADD TO CART',
+              onPressed: () => No18BottomSheet().showSortOptions(context),
+            ),
           ),
           Container(
             height: 7,

@@ -196,3 +196,11 @@ final List<int> Ratinglist = [
 
   2, 3, 5, 2, 2, 3, 1, 1, 1,
 ];
+
+final no22_imagelist = [
+  "https://cdn.pixabay.com/photo/2016/06/19/12/46/woman-1466628_1280.jpg",
+  "https://cdn.pixabay.com/photo/2018/01/29/17/01/woman-3116587_1280.jpg",
+  "https://cdn.pixabay.com/photo/2017/11/19/07/30/girl-2961959_1280.jpg",
+  "https://cdn.pixabay.com/photo/2015/09/05/21/51/reading-925589_1280.jpg",
+  "https://cdn.pixabay.com/photo/2016/10/12/02/56/girl-1733352_1280.jpg",
+];

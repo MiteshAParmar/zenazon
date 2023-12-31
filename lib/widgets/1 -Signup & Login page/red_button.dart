@@ -2,9 +2,12 @@ import 'package:zenazon/app/utility/consts.dart';
 
 class RedButton extends StatelessWidget {
   final String title;
+  final VoidCallback? onPressed; // Make onPressed nullable
+
   const RedButton({
     super.key,
     required this.title,
+    this.onPressed, // Don't set a default value here
   });
 
   @override
@@ -13,14 +16,15 @@ class RedButton extends StatelessWidget {
       width: double.infinity,
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
-            elevation: 5,
-            shadowColor: AppColors.redColor.withOpacity(.5),
-            shape: const RoundedRectangleBorder(
-                borderRadius: BorderRadius.all(Radius.circular(30))),
-            backgroundColor: AppColors.redColor),
-        onPressed: () {
-          Get.back();
-        },
+          elevation: 5,
+          shadowColor: AppColors.redColor.withOpacity(.5),
+          shape: const RoundedRectangleBorder(
+            borderRadius: BorderRadius.all(Radius.circular(30)),
+          ),
+          backgroundColor: AppColors.redColor,
+        ),
+        onPressed: onPressed ??
+            Get.back, // Use onPressed if not null, otherwise default to Get.back()
         child: Padding(
           padding: EdgeInsets.only(top: 1.5.h, bottom: 1.5.h),
           child: Text(

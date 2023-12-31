@@ -28,6 +28,10 @@ abstract class Routes {
   static const NO17_FILTER_LIST = _Paths.NO17_FILTER_LIST;
   static const NO18_SELECTSIZE = _Paths.NO18_SELECTSIZE;
   static const NO19_PRODUCT_CARD = _Paths.NO19_PRODUCT_CARD;
+  static const NO20_PRODUCTCART_SELECTSIZE = _Paths.NO20_PRODUCTCART_SELECTSIZE;
+  static const RATING_REVIEWS = _Paths.RATING_REVIEWS;
+  static const NO22_RATING_REVIEWS_WITH_PHOTO =
+      _Paths.NO22_RATING_REVIEWS_WITH_PHOTO;
 }
 
 abstract class _Paths {
@@ -56,4 +60,8 @@ abstract class _Paths {
   static const NO17_FILTER_LIST = '/no17-filter-list';
   static const NO18_SELECTSIZE = '/no18-selectsize';
   static const NO19_PRODUCT_CARD = '/no19-product-card';
+  static const NO20_PRODUCTCART_SELECTSIZE = '/no20-productcart-selectsize';
+  static const RATING_REVIEWS = '/rating-reviews';
+  static const NO22_RATING_REVIEWS_WITH_PHOTO =
+      '/no22-rating-reviews-with-photo';
 }

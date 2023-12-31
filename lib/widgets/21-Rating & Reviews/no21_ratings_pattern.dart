@@ -2,8 +2,8 @@
 
 import 'package:zenazon/app/utility/consts.dart';
 
-class StarBarPattern extends StatelessWidget {
-  const StarBarPattern({super.key});
+class No21StarBarPattern extends StatelessWidget {
+  const No21StarBarPattern({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -58,6 +58,7 @@ class StarBarPattern extends StatelessWidget {
           width: 100,
           height: 150,
           child: ListView.builder(
+            physics: const NeverScrollableScrollPhysics(),
             scrollDirection: Axis.vertical,
             itemCount: Ratinglist.length,
             itemBuilder: (BuildContext context, int index) {
@@ -89,6 +90,7 @@ class StarBarPattern extends StatelessWidget {
           width: 160,
           height: 150,
           child: ListView.builder(
+            physics: const NeverScrollableScrollPhysics(),
             scrollDirection: Axis.vertical,
             itemCount: Ratinglist.length,
             itemBuilder: (BuildContext context, int index) {

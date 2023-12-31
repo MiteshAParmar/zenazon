@@ -12,7 +12,7 @@ class BottomNavBar extends StatelessWidget {
       backgroundColor: AppColors.whiteColor,
       selectedItemColor: AppColors.redColor,
       unselectedItemColor: AppColors.blackColor,
-      selectedFontSize: 12.dp,
+      selectedFontSize: 15.dp,
       unselectedFontSize: 12.dp,
       items: const [
         BottomNavigationBarItem(

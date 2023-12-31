@@ -225,6 +225,36 @@ class RoutesView extends GetView<RoutesController> {
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.w700),
                   ),
                 ),
+                TextButton(
+                  onPressed: () {
+                    Get.toNamed(Routes.NO20_PRODUCTCART_SELECTSIZE)
+                        ?.then((value) => controller.onInit());
+                  },
+                  child: Text(
+                    '20- Product Card/Select Size',
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.w700),
+                  ),
+                ),
+                TextButton(
+                  onPressed: () {
+                    Get.toNamed(Routes.RATING_REVIEWS)
+                        ?.then((value) => controller.onInit());
+                  },
+                  child: Text(
+                    '21- Rating & Reviews',
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.w700),
+                  ),
+                ),
+                TextButton(
+                  onPressed: () {
+                    Get.toNamed(Routes.NO22_RATING_REVIEWS_WITH_PHOTO)
+                        ?.then((value) => controller.onInit());
+                  },
+                  child: Text(
+                    '22- Rating & Reviews with Photo',
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.w700),
+                  ),
+                ),
               ],
             ),
           ),
